@@ -16,6 +16,9 @@
 #include "params.h"
 #include "queue.h"
 
+/*Variable globale*/
+    SemaphoreHandle_t bouton_semph;
+
 void vLEDTask(void)
 {
     for(;;)
@@ -27,13 +30,33 @@ void vLEDTask(void)
     }
 }
 
+void isr_bouton(void)
+{
+        xSemaphoreGiveFromISR(bouton_semph,NULL);
+        Cy_GPIO_ClearInterrupt(Bouton_0_PORT,Bouton_0_NUM);
+        NVIC_ClearPendingIRQ(Bouton_ISR_cfg.intrSrc);
+}
+
+void bouton_task(void)
+{
+    
+    
+}
+
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
 
+    
+    /*Initialize interrupt*/
+    Cy_SysInt_Init(&Bouton_ISR_cfg, isr_bouton);
+    NVIC_ClearPendingIRQ(Bouton_ISR_cfg.intrSrc);
+    NVIC_EnableIRQ(Bouton_ISR_cfg.intrSrc);
+    
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     xTaskCreate(vLEDTask,"LED",80,NULL,1,NULL); 
     vTaskStartScheduler();
+    
     for(;;)
     {
         /* Place your application code here. */
