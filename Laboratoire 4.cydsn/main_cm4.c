@@ -18,6 +18,7 @@
 
 /*Variable globale*/
     SemaphoreHandle_t bouton_semph;
+    bool acquis= false;
 
 void vLEDTask(void)
 {
