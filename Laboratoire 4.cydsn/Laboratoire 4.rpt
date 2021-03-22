@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.322ms
+Loading plugins phase: Elapsed time ==> 0s.250ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Laboratoire 4.cyprj -d CY8C6347BZI-BLD53 -s C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.491ms
+Elaboration phase: Elapsed time ==> 1s.544ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.081ms
+HDL generation phase: Elapsed time ==> 0s.077ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\fatim
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Mar 18 19:11:09 2021
+Mon Mar 22 10:12:31 2021
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 Laboratoire 4.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Mar 18 19:11:09 2021
+Mon Mar 22 10:12:31 2021
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\fatim
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Mar 18 19:11:09 2021
+Mon Mar 22 10:12:31 2021
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\fatim
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Mar 18 19:11:09 2021
+Mon Mar 22 10:12:31 2021
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -177,18 +177,17 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Laboratoire 4.cyprj" -dcpsoc3 "Laboratoire 4.v" -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.923ms
+Warp synthesis phase: Elapsed time ==> 0s.878ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 18 March 2021 19:11:10
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Monday, 22 March 2021 10:12:31
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Laboratoire 4.cyprj -d CY8C6347BZI-BLD53 Laboratoire 4.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.335ms
+Design parsing phase: Elapsed time ==> 0s.355ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
-Warning: mpr.M0055: Interrupt "Bouton_ISR" is driven with a logic high and the interrupt will always be asserted. (App=cydsfit)
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -450,20 +449,6 @@ Design Equations
         }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
-
-    ------------------------------------------------------------
-    Macrocell listing
-    ------------------------------------------------------------
-
-    MacroCell: Name=__ONE__, Mode=(Combinatorial)
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=1)
     </CYPRESSTAG>
     <CYPRESSTAG name="Datapath listing">
     </CYPRESSTAG>
@@ -497,7 +482,7 @@ Design Equations
 
     interrupt: Name =Bouton_ISR
         PORT MAP (
-            interrupt => __ONE__ );
+            interrupt => INDIVIDUAL_PICU_OUT_0 );
         Properties:
         {
             cy_registers = ""
@@ -534,7 +519,7 @@ LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
 TCPWM                         :    0 :   32 :   32 :  0.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :    1 :   95 :   96 :  1.04 %
+  Macrocells                  :    0 :   96 :   96 :  0.00 %
   Unique P-terms              :    0 :  192 :  192 :  0.00 %
   Total P-terms               :    0 :      :      :        
   Datapath Cells              :    0 :   12 :   12 :  0.00 %
@@ -548,8 +533,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.060ms
-Tech Mapping phase: Elapsed time ==> 0s.160ms
+Technology Mapping: Elapsed time ==> 0s.050ms
+Tech Mapping phase: Elapsed time ==> 0s.236ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -566,17 +551,18 @@ Bouton(0)                           : [IOP=(0)][IoId=(4)]
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
 \UART_1:SCB\                        : SCB_[FFB(SCB,5)]                   
+IOSS                                : IOSS_[FFB(IOSS,0)]                 
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.4626137s
+Elapsed time ==> 0.3558669s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 1s.604ms
+Analog Placement phase: Elapsed time ==> 1s.403ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0013614 secs
+Route success=True, Iterations=1 Elapsed=0.0016377 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
@@ -589,43 +575,26 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.123ms
+Analog Code Generation phase: Elapsed time ==> 0s.025ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 1.5 sec.
+I2076: Total run-time: 0.7 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
-<CYPRESSTAG name="PLD Packing Summary" expanded>
-
-------------------------------------------------------------
-PLD Packing Summary
-------------------------------------------------------------
-            Resource Type : Used : Free :  Max :  % Used
-    ====================================================
-                     PLDs :    1 :   23 :   24 :   4.17%
-
-<CYPRESSTAG name="PLD Statistics">
-
-        PLD Resource Type :     Average/LAB
-    =======================================
-                   Inputs :            0.00
-                   Pterms :            0.00
-               Macrocells :            1.00
+<CYPRESSTAG name="PLD Packing Summary">
+No PLDs were packed.
 </CYPRESSTAG>
-<CYPRESSTAG name="Packed PLD Contents">
-Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
-</CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.077ms
+Partitioning: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -635,7 +604,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          1 :       0.00 :       1.00
+                 UDB :          0 :       0.00 :       0.00
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -645,27 +614,7 @@ Component Placement Details
 UDB [UDB=(0,0)] is empty.
 UDB [UDB=(0,1)] is empty.
 UDB [UDB=(0,2)] is empty.
-UDB [UDB=(0,3)] contents:
-LAB@[UDB=(0,3)][LB=0] #macrocells=1, #inputs=0, #pterms=0
-{
-    [McSlotId=0]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,3)][LB=0][MC=0]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
+UDB [UDB=(0,3)] is empty.
 UDB [UDB=(0,4)] is empty.
 UDB [UDB=(0,5)] is empty.
 UDB [UDB=(1,0)] is empty.
@@ -675,20 +624,20 @@ UDB [UDB=(1,3)] is empty.
 UDB [UDB=(1,4)] is empty.
 UDB [UDB=(1,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
-  Intr@ [IntrContainer=(0)][IntrId=(46)] 
-    interrupt: Name =\UART_1:SCB_IRQ\
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =Bouton_ISR
         PORT MAP (
-            interrupt => \UART_1:intr_wire\ );
+            interrupt => INDIVIDUAL_PICU_OUT_0 );
         Properties:
         {
             cy_registers = ""
             deepsleep_required = 0
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(122)] 
-    interrupt: Name =Bouton_ISR
+  Intr@ [IntrContainer=(0)][IntrId=(46)] 
+    interrupt: Name =\UART_1:SCB_IRQ\
         PORT MAP (
-            interrupt => __ONE__ );
+            interrupt => \UART_1:intr_wire\ );
         Properties:
         {
             cy_registers = ""
@@ -1058,7 +1007,14 @@ CPUSS group 0:
         Properties:
         {
         }
-IOSS group 0: empty
+IOSS group 0: 
+    IOSS Block @ F(IOSS,0): 
+    IOSS: Name =IOSS
+        PORT MAP (
+            interrupt_port_0 => INDIVIDUAL_PICU_OUT_0 );
+        Properties:
+        {
+        }
 UDB group 0: empty
 IPC group 0: empty
 I2S group 0: empty
@@ -1090,32 +1046,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.018ms
-Digital Placement phase: Elapsed time ==> 10s.621ms
+Digital Placement phase: Elapsed time ==> 8s.439ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "Laboratoire 4_r.vh2" --pcf-path "Laboratoire 4.pco" --des-name "Laboratoire 4" --dsf-path "Laboratoire 4.dsf" --sdc-path "Laboratoire 4.sdc" --lib-path "Laboratoire 4_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.665ms
+Digital Routing phase: Elapsed time ==> 1s.531ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 1s.147ms
+Bitstream Generation phase: Elapsed time ==> 0s.844ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.001ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in Laboratoire 4_timing.html.
-Static timing analysis phase: Elapsed time ==> 14s.061ms
+Static timing analysis phase: Elapsed time ==> 14s.267ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.267ms
+Design database save phase: Elapsed time ==> 0s.264ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 30s.064ms
+cydsfit: Elapsed time ==> 27s.441ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 30s.161ms
-API generation phase: Elapsed time ==> 3s.734ms
-Dependency generation phase: Elapsed time ==> 0s.282ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 27s.442ms
+API generation phase: Elapsed time ==> 9s.208ms
+Dependency generation phase: Elapsed time ==> 0s.027ms
+Cleanup phase: Elapsed time ==> 0s.001ms

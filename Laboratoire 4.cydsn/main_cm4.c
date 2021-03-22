@@ -18,9 +18,9 @@
 
 /*Variable globale*/
     SemaphoreHandle_t bouton_semph;
-    bool acquis= false;
+    int count =2;
 
-void vLEDTask(void)
+void vLEDTask()
 {
     for(;;)
     {
@@ -36,11 +36,29 @@ void isr_bouton(void)
         xSemaphoreGiveFromISR(bouton_semph,NULL);
         Cy_GPIO_ClearInterrupt(Bouton_0_PORT,Bouton_0_NUM);
         NVIC_ClearPendingIRQ(Bouton_ISR_cfg.intrSrc);
+                
 }
 
-void bouton_task(void)
+void vbouton_task()
 {
-    
+    for(;;)
+    {
+        xSemaphoreTake(bouton_semph,portMAX_DELAY);
+        vTaskDelay(pdMS_TO_TICKS(20));
+        if(count%2 ==0)
+        {
+            UART_1_PutString("\n\r Bouton appuye");
+            count++;
+            bouton_semph= xSemaphoreCreateBinary();
+        }
+        else if(count%2 !=0)
+        {
+            UART_1_PutString("\n\r Bouton relache");
+            count++;
+            bouton_semph= xSemaphoreCreateBinary();
+        }
+    }
+        
     
 }
 
@@ -48,15 +66,22 @@ int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
 
+    UART_1_Start();
     
+    bouton_semph=xSemaphoreCreateBinary(); //initialisé avant la prochaine ligne !
     /*Initialize interrupt*/
     Cy_SysInt_Init(&Bouton_ISR_cfg, isr_bouton);
     NVIC_ClearPendingIRQ(Bouton_ISR_cfg.intrSrc);
     NVIC_EnableIRQ(Bouton_ISR_cfg.intrSrc);
     
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    xTaskCreate(vLEDTask,"LED",80,NULL,1,NULL); 
+      
+    
+    
+    xTaskCreate(vbouton_task, "tache_affichage_bouton",80,NULL,3,NULL);
+    xTaskCreate(vLEDTask,"LED",80,NULL,3,NULL); 
     vTaskStartScheduler();
+    
     
     for(;;)
     {
