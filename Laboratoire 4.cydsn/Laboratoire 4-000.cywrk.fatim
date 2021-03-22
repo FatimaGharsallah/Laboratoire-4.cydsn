@@ -291,7 +291,6 @@
 <name v=".\main_cm4.c" />
 <name v=".\TopDesign\TopDesign.cysch" />
 <name v=".\Laboratoire 4.cydwr" />
-<name v=".\Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\include\semphr.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -299,7 +298,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="722, 495" SelectedTabbedMdiWindow="59b0edaf-581b-4e51-9ba6-2369732d0a9e"><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\main_cm4.c" Guid="59b0edaf-581b-4e51-9ba6-2369732d0a9e" /><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\TopDesign\TopDesign.cysch" Guid="95552dcf-3af0-4298-811e-6aabc7f33015" /><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Laboratoire 4.cydwr" Guid="82259428-f8f7-4ab1-b899-6ca7a5cdfe4e" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45068785-0f1f-40a2-81ad-4631b648d04a" /><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\include\semphr.h" Guid="ac136c22-c462-4621-ab33-1e3f00f63c45" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1490, 495" SelectedTabbedMdiWindow="59b0edaf-581b-4e51-9ba6-2369732d0a9e"><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\main_cm4.c" Guid="59b0edaf-581b-4e51-9ba6-2369732d0a9e" /><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\TopDesign\TopDesign.cysch" Guid="95552dcf-3af0-4298-811e-6aabc7f33015" /><DocumentWindow Key="C:\Users\fatim\Desktop\Polytechnique\Annee 2\H2021\GBM2100\Labo\Laboratoire 4\Laboratoire-4.cydsn\Laboratoire 4.cydsn\Laboratoire 4.cydwr" Guid="82259428-f8f7-4ab1-b899-6ca7a5cdfe4e" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45068785-0f1f-40a2-81ad-4631b648d04a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
